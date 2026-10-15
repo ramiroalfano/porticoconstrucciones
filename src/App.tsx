@@ -3,7 +3,6 @@ import { Navbar } from './components/Navbar.tsx';
 import { Hero } from './components/Hero.tsx';
 import { AboutUs } from './components/AboutUs.tsx';
 import { ServicesSection } from './components/ServicesSection.tsx';
-import { MethodologySection } from './components/MethodologySection.tsx';
 import { BeforeAfterProcess } from './components/BeforeAfterProcess.tsx';
 import { ValuesSection } from './components/ValuesSection.tsx';
 import { ProjectsPortfolio } from './components/ProjectsPortfolio.tsx';
@@ -97,11 +96,6 @@ export default function App() {
         {/* Obras y Proyectos Realizados */}
         <ProjectsPortfolio
           onQuoteSimilar={handleQuoteSimilarProject}
-        />
-
-        {/* Metodología de 4 Etapas */}
-        <MethodologySection
-          onOpenContact={() => scrollToSection('contacto')}
         />
 
         {/* Detrás de Escena: Antes / Proceso / Después */}
