@@ -7,6 +7,7 @@ import { BeforeAfterProcess } from './components/BeforeAfterProcess.tsx';
 import { ValuesSection } from './components/ValuesSection.tsx';
 import { ProjectsPortfolio } from './components/ProjectsPortfolio.tsx';
 import { ContactSection } from './components/ContactSection.tsx';
+import { FAQSection } from './components/FAQSection.tsx';
 import { AnimatedWhatsAppButton } from './components/AnimatedWhatsAppButton.tsx';
 import { Footer } from './components/Footer.tsx';
 import { AdminVideoModal } from './components/AdminVideoModal.tsx';
@@ -103,6 +104,9 @@ export default function App() {
 
         {/* 4 Valores Fundamentales */}
         <ValuesSection />
+
+        {/* FAQ - Transparencia en Plazos, Materiales y Pagos */}
+        <FAQSection onOpenContact={() => scrollToSection('contacto')} />
 
         {/* Sección de Contacto Directo */}
         <ContactSection prefilledData={quoteData} />

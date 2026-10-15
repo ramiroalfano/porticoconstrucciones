@@ -23,6 +23,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact, onScrollToSection
     { label: 'Servicios', id: 'servicios' },
     { label: 'Obras', id: 'obras' },
     { label: 'Valores', id: 'valores' },
+    { label: 'Preguntas', id: 'faq' },
     { label: 'Contacto', id: 'contacto' },
   ];
 

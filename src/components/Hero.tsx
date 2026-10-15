@@ -68,9 +68,16 @@ export const Hero: React.FC<HeroProps> = ({ onScrollToSection, onOpenContact }) 
           loop
           playsInline
           preload="auto"
+          onError={() => {
+            if (videoSrc !== '/construction_bg.mp4') {
+              setVideoSrc('/construction_bg.mp4');
+            }
+          }}
           className="w-full h-full object-cover"
         >
           <source src={videoSrc} type="video/mp4" />
+          <source src="/videobanner.mp4" type="video/mp4" />
+          <source src="/construction_bg.mp4" type="video/mp4" />
         </video>
 
         {/* Architectural Contrast Scrims - calibrated for video clarity while preserving text readability */}
