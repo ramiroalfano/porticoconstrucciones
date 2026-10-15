@@ -45,7 +45,7 @@ export const PorticoLogo: React.FC<PorticoLogoProps> = ({
             src={wordmarkSrc}
             alt="Pórtico Construcciones"
             className={`${wordmarkSizes[size]} w-auto`}
-            width={1056}
+            width={1061}
             height={226}
           />
 
