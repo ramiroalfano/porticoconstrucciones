@@ -22,7 +22,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact, onScrollToSection
   const navLinks = [
     { label: 'Servicios', id: 'servicios' },
     { label: 'Obras', id: 'obras' },
-    { label: 'Metodología', id: 'metodologia' },
     { label: 'Valores', id: 'valores' },
     { label: 'Contacto', id: 'contacto' },
   ];
