@@ -26,7 +26,7 @@ export const ProjectsPortfolio: React.FC<ProjectsPortfolioProps> = ({ onQuoteSim
       location: 'Belgrano, CABA',
       area: '4.850 m²',
       timeline: '18 Meses',
-      image: '/src/assets/images/hero_modern_architecture_1792078674541.jpg',
+      image: '/images/hero_modern_architecture_1792078674541.jpg',
       headline: 'Edificio corporativo triple A con certificación de eficiencia energética',
       summary:
         'Construcción integral llave en mano de estructura de hormigón visto, piel de vidrio reflectivo de alta prestación con DVH y subsuelos técnicos para cocheras.',
@@ -45,7 +45,7 @@ export const ProjectsPortfolio: React.FC<ProjectsPortfolioProps> = ({ onQuoteSim
       location: 'Nordelta, Buenos Aires',
       area: '720 m²',
       timeline: '12 Meses',
-      image: '/src/assets/images/facade_renovation_finished_1792078679765.jpg',
+      image: '/images/facade_renovation_finished_1792078679765.jpg',
       headline: 'Vivienda unifamiliar de arquitectura contemporánea con piscina sin fin',
       summary:
         'Desarrollo residencial de lujo sobre lote al lago. Volumetría pura en hormigón, revestimientos de piedra natural, carpinterías de piso a techo y domótica integrada.',
@@ -64,7 +64,7 @@ export const ProjectsPortfolio: React.FC<ProjectsPortfolioProps> = ({ onQuoteSim
       location: 'Ezeiza, Buenos Aires',
       area: '14.500 m²',
       timeline: '10 Meses',
-      image: '/src/assets/images/construction_site_in_progress_1792078675584.jpg',
+      image: '/images/construction_site_in_progress_1792078675584.jpg',
       headline: 'Nave logística de alta velocidad con 12 dársenas de carga y piso láser',
       summary:
         'Obra de envergadura ejecutada en tiempo récord. Estructura metálica de alma llena, cerramientos térmicos de panel sándwich y soleras de hormigón de alta planimetría.',
@@ -83,7 +83,7 @@ export const ProjectsPortfolio: React.FC<ProjectsPortfolioProps> = ({ onQuoteSim
       location: 'Vicente López, Buenos Aires',
       area: '9.200 m²',
       timeline: '22 Meses',
-      image: '/src/assets/images/hero_modern_architecture_1792078674541.jpg',
+      image: '/images/hero_modern_architecture_1792078674541.jpg',
       headline: 'Torre de 16 pisos con semipisos exclusivos y vistas panorámicas',
       summary:
         'Ejecución y dirección técnica de obra para fideicomiso al costo. Fundaciones profundas sobre pilotes, encofrados trepantes y amenities premium en azotea.',
@@ -102,7 +102,7 @@ export const ProjectsPortfolio: React.FC<ProjectsPortfolioProps> = ({ onQuoteSim
       location: 'Recoleta, CABA',
       area: '2.600 m²',
       timeline: '9 Meses',
-      image: '/src/assets/images/architectural_blueprints_planning_1792078675841.jpg',
+      image: '/images/architectural_blueprints_planning_1792078675841.jpg',
       headline: 'Remodelación y puesta en valor de edificio corporativo histórico',
       summary:
         'Refuncionalización completa preservando el valor patrimonial de fachada, con renovación total de núcleos sanitarios, redes de datos y eficiencia luminaria.',
@@ -121,7 +121,7 @@ export const ProjectsPortfolio: React.FC<ProjectsPortfolioProps> = ({ onQuoteSim
       location: 'Palermo, CABA',
       area: '1.800 m²',
       timeline: '8 Meses',
-      image: '/src/assets/images/facade_renovation_finished_1792078679765.jpg',
+      image: '/images/facade_renovation_finished_1792078679765.jpg',
       headline: 'Galería comercial gastronómica y de diseño a cielo abierto',
       summary:
         'Construcción y arquitectura de interiores para locales gastronómicos y locales insignia, con pérgolas metálicas, solados antideslizantes y paisajismo integrado.',

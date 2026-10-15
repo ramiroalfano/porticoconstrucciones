@@ -37,7 +37,7 @@ export const AboutUs: React.FC<AboutUsProps> = ({ onOpenContact }) => {
           <div className="lg:col-span-6 relative">
             <div className="relative rounded-lg overflow-hidden shadow-2xl bg-slate-900 border border-slate-200">
               <img
-                src="/src/assets/images/construction_site_in_progress_1792078675584.jpg"
+                src="/images/construction_site_in_progress_1792078675584.jpg"
                 alt="Ingenieros de Pórtico Construcciones fiscalizando estructura de hormigón en obra"
                 className="w-full h-[460px] object-cover hover:scale-105 transition-transform duration-700"
                 referrerPolicy="no-referrer"

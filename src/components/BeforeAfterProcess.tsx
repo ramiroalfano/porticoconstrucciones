@@ -10,7 +10,7 @@ export const BeforeAfterProcess: React.FC = () => {
       label: 'Antes',
       title: 'El Terreno o Estado Original',
       subtitle: 'Estudio de suelos, demolición controlada y nivelación',
-      image: '/src/assets/images/architectural_blueprints_planning_1792078675841.jpg',
+      image: '/images/architectural_blueprints_planning_1792078675841.jpg',
       badge: 'Fase Inicial',
       description:
         'Todo comienza con un relevamiento exhaustivo del terreno, verificación de límites catastrales, análisis de cotas y preparación del suelo para el cálculo de fundaciones.',
@@ -21,7 +21,7 @@ export const BeforeAfterProcess: React.FC = () => {
       label: 'Proceso',
       title: 'Hormigonado, Estructura & Gremios',
       subtitle: 'Dirección técnica continua y coordinación milimétrica',
-      image: '/src/assets/images/construction_site_in_progress_1792078675584.jpg',
+      image: '/images/construction_site_in_progress_1792078675584.jpg',
       badge: 'En Ejecución',
       description:
         'El corazón de la obra: encofrados, hierros tratados, hormigonado con ensayos de laboratorio y tendido de instalaciones antes del cierre de tabiques.',
@@ -32,7 +32,7 @@ export const BeforeAfterProcess: React.FC = () => {
       label: 'Después',
       title: 'Entrega Llave en Mano',
       subtitle: 'Espacios funcionales de alta gama listos para habitar o producir',
-      image: '/src/assets/images/facade_renovation_finished_1792078679765.jpg',
+      image: '/images/facade_renovation_finished_1792078679765.jpg',
       badge: 'Obra Finalizada',
       description:
         'Terminaciones nobles, carpinterías de alta prestación con DVH, envolventes térmicas y entrega formal con manual de mantenimiento y garantía extendida.',
