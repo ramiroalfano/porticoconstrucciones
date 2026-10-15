@@ -31,7 +31,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
       headline: 'Obras Civiles, Comerciales y Residenciales Llave en Mano',
       description:
         'Ejecución completa de edificaciones de media y gran escala con provisión de materiales, mano de obra calificada y supervisión permanente de ingeniería.',
-      image: '/src/assets/images/construction_site_in_progress_1792078675584.jpg',
+      image: '/images/construction_site_in_progress_1792078675584.jpg',
       keyPoints: [
         'Hormigón armado, estructuras metálicas y mampostería tradicional',
         'Contratos a precio y plazo cerrado sin desvíos imprevistos',
@@ -50,7 +50,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
       headline: 'Supervisión Técnica, Control de Presupuesto y Calidad',
       description:
         'Acompañamos al comitente asumiendo el control exhaustivo de cada rubro, coordinando gremios y verificando que el proyecto se ejecute con precisión milimétrica.',
-      image: '/src/assets/images/architectural_blueprints_planning_1792078675841.jpg',
+      image: '/images/architectural_blueprints_planning_1792078675841.jpg',
       keyPoints: [
         'Certificación periódica de avances y liquidación de subcontratos',
         'Ensayos destructivos y no destructivos de materiales en laboratorio',
@@ -69,7 +69,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
       headline: 'Diseño Arquitectónico, Modelado 3D BIM e Ingeniería',
       description:
         'Transformamos requerimientos en planos constructivos ejecutables. Diseñamos con criterio de constructibilidad para optimizar metros cuadrados y presupuestos.',
-      image: '/src/assets/images/architectural_blueprints_planning_1792078675841.jpg',
+      image: '/images/architectural_blueprints_planning_1792078675841.jpg',
       keyPoints: [
         'Modelado 3D fotorrealista y recorridos virtuales de alta definición',
         'Cálculo de estructuras sismorresistentes e instalaciones complementarias',
@@ -88,7 +88,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
       headline: 'Puesta en Valor Corporativa, Comercial y Residencial',
       description:
         'Modernizamos plantas fabriles, oficinas comerciales, locales a la calle y residencias premium minimizando la interrupción de las actividades operativas.',
-      image: '/src/assets/images/facade_renovation_finished_1792078679765.jpg',
+      image: '/images/facade_renovation_finished_1792078679765.jpg',
       keyPoints: [
         'Renovación integral de fachadas, cubiertas y envolventes térmicas',
         'Adecuación de instalaciones eléctricas, sanitarias y climatización',
@@ -107,7 +107,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
       headline: 'Estructuración Integral de Inversiones y Negocios en Pozo',
       description:
         'Identificamos terrenos estratégicos, modelamos flujos financieros y gestionamos el proyecto de punta a punta para maximizar la rentabilidad del capital inversor.',
-      image: '/src/assets/images/hero_modern_architecture_1792078674541.jpg',
+      image: '/images/hero_modern_architecture_1792078674541.jpg',
       keyPoints: [
         'Estudio de factibilidad urbana y código urbanístico aplicable',
         'Diseño de fideicomisos y vehículos jurídicos transparentes',
