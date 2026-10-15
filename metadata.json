@@ -1,0 +1,6 @@
+{
+  "name": "Pórtico Construcciones",
+  "description": "Sitio institucional y comercial de Pórtico Construcciones. Grandes proyectos, mejores historias. Construcción, dirección de obra, proyectos y remodelaciones.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

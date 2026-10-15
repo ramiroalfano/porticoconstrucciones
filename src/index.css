@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Montserrat', system-ui, -apple-system, sans-serif;
+  --color-portico-dark: #1F2D3A;
+  --color-portico-orange: #FF8A00;
+  --color-portico-gray: #E5E7EB;
+  --color-portico-surface: #F4F6F8;
+}
+
+html {
+  font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1F2D3A;
+}
+::-webkit-scrollbar-thumb {
+  background: #3A4C5E;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF8A00;
+}
