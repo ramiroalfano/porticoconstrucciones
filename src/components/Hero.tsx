@@ -8,7 +8,7 @@ interface HeroProps {
 
 export const Hero: React.FC<HeroProps> = ({ onScrollToSection, onOpenContact }) => {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [videoSrc, setVideoSrc] = React.useState<string>('/construction_bg.mp4');
+  const [videoSrc, setVideoSrc] = React.useState<string>('/videobanner.mp4');
 
   useEffect(() => {
     let currentObjectUrl: string | null = null;
