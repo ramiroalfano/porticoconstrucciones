@@ -64,23 +64,23 @@ export const Footer: React.FC<FooterProps> = ({ onScrollToSection, onOpenAdmin }
                   onClick={() => onScrollToSection('obras')}
                   className="hover:text-[#FF8A00] transition-colors cursor-pointer text-left"
                 >
-                  Obras Realizadas
+                  Proyectos Realizados
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => onScrollToSection('valores')}
+                  onClick={() => onScrollToSection('proveedores')}
                   className="hover:text-[#FF8A00] transition-colors cursor-pointer text-left"
                 >
-                  Valores Fundamentales
+                  Proveedores de Confianza
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => onScrollToSection('faq')}
+                  onClick={() => onScrollToSection('clientes')}
                   className="hover:text-[#FF8A00] transition-colors cursor-pointer text-left"
                 >
-                  Preguntas Frecuentes & Garantías
+                  Quiénes Confiaron en Nosotros
                 </button>
               </li>
               <li>

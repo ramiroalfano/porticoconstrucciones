@@ -76,8 +76,8 @@ export const Hero: React.FC<HeroProps> = ({ onScrollToSection, onOpenContact }) 
           className="w-full h-full object-cover"
         >
           <source src={videoSrc} type="video/mp4" />
-          <source src="/videobanner.mp4" type="video/mp4" />
-          <source src="/construction_bg.mp4" type="video/mp4" />
+          {videoSrc !== '/videobanner.mp4' && <source src="/videobanner.mp4" type="video/mp4" />}
+          {videoSrc !== '/construction_bg.mp4' && <source src="/construction_bg.mp4" type="video/mp4" />}
         </video>
 
         {/* Architectural Contrast Scrims - calibrated for video clarity while preserving text readability */}
@@ -91,35 +91,35 @@ export const Hero: React.FC<HeroProps> = ({ onScrollToSection, onOpenContact }) 
           {/* Brand Kicker */}
           <div className="flex items-center gap-2.5 text-xs font-semibold tracking-[0.2em] text-[#FF8A00] uppercase mb-4">
             <span className="w-8 h-[2px] bg-[#FF8A00]" />
-            <span>Excelencia · Compromiso · Construyendo Juntos</span>
+            <span>Ingeniería & Construcción</span>
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.1] mb-6 [text-wrap:balance]">
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.1] mb-5 [text-wrap:balance]">
             Grandes proyectos, <br />
             <span className="text-[#FF8A00]">mejores historias.</span>
           </h1>
 
-          {/* Value Proposition */}
-          <p className="text-base sm:text-lg text-slate-300 font-normal leading-relaxed max-w-2xl mb-8">
-            En <strong className="font-semibold text-white">Pórtico Construcciones</strong> desarrollamos espacios pensados para durar. Combinamos ingeniería de precisión, cumplimiento riguroso de plazos y dirección experta en cada etapa de obra.
+          {/* Value Proposition - Short and direct */}
+          <p className="text-base sm:text-lg text-slate-200 font-normal leading-relaxed max-w-xl mb-8">
+            Construcción civil, comercial y residencial. Plazos garantizados, precios cerrados y dirección técnica especializada.
           </p>
 
           {/* Action CTAs */}
-          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-10">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-9">
             <button
               onClick={onOpenContact}
-              className="px-8 py-4 text-sm font-bold uppercase tracking-wider text-white bg-[#FF8A00] hover:bg-[#e07900] active:scale-[0.98] transition-all rounded shadow-lg shadow-orange-500/25 flex items-center justify-center gap-3 cursor-pointer group"
+              className="px-8 py-4 text-xs sm:text-sm font-bold uppercase tracking-wider text-white bg-[#FF8A00] hover:bg-[#e07900] active:scale-[0.98] transition-all rounded shadow-lg shadow-orange-500/25 flex items-center justify-center gap-3 cursor-pointer group"
             >
               <span>Solicitar Presupuesto</span>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </button>
 
             <button
-              onClick={() => onScrollToSection('obras')}
-              className="px-7 py-4 text-sm font-semibold tracking-wider text-white hover:text-[#FF8A00] bg-white/10 hover:bg-white/15 backdrop-blur-sm border border-white/20 transition-all rounded flex items-center justify-center gap-2 cursor-pointer"
+              onClick={() => onScrollToSection('servicios')}
+              className="px-7 py-4 text-xs sm:text-sm font-semibold tracking-wider text-white hover:text-[#FF8A00] bg-white/10 hover:bg-white/15 backdrop-blur-sm border border-white/20 transition-all rounded flex items-center justify-center gap-2 cursor-pointer"
             >
-              <span>Ver Obras Realizadas</span>
+              <span>Nuestros Servicios</span>
             </button>
           </div>
 
@@ -127,15 +127,15 @@ export const Hero: React.FC<HeroProps> = ({ onScrollToSection, onOpenContact }) 
           <div className="flex flex-wrap items-center gap-y-2 gap-x-6 text-xs text-slate-300">
             <div className="flex items-center gap-2">
               <CheckCircle2 className="w-4 h-4 text-[#FF8A00]" />
-              <span>Contratos con Plazo Garantizado</span>
+              <span>Plazos garantizados</span>
             </div>
             <div className="flex items-center gap-2">
               <ShieldCheck className="w-4 h-4 text-[#FF8A00]" />
-              <span>Personal 100% Matriculado & Normas ART</span>
+              <span>Personal 100% asegurado (ART)</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="text-slate-400">·</span>
-              <span>Cómputo métrico cerrado sin sorpresas</span>
+              <span>Presupuesto sin costos ocultos</span>
             </div>
           </div>
         </div>

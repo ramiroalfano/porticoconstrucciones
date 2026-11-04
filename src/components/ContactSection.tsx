@@ -65,13 +65,13 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ prefilledData })
                 <span>Contacto Directo</span>
               </div>
 
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1F2D3A] tracking-tight mb-4">
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1F2D3A] tracking-tight mb-3">
                 ¿Tenés un proyecto en mente? <br />
                 <span className="text-[#FF8A00]">Hablemos.</span>
               </h2>
 
-              <p className="text-base text-slate-600 leading-relaxed mb-8">
-                Estamos listos para evaluar tus planos, visitar el terreno o diseñar una propuesta técnico-económica a la medida de tus expectativas.
+              <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-8">
+                Evaluamos tu proyecto o planos y te enviamos una cotización clara y detallada sin cargo.
               </p>
 
               {/* Coordinates List */}
@@ -141,17 +141,6 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ prefilledData })
                   </div>
                 </div>
               </div>
-            </div>
-
-            {/* Response Time Guarantee Box */}
-            <div className="p-4 rounded bg-[#F4F6F8] border border-slate-200">
-              <div className="flex items-center gap-2 text-xs font-bold text-[#1F2D3A] uppercase tracking-wider mb-1">
-                <CheckCircle2 className="w-4 h-4 text-[#FF8A00]" />
-                <span>Compromiso de Respuesta Rápida</span>
-              </div>
-              <p className="text-xs text-slate-600">
-                Nos comunicamos dentro de las 2 horas hábiles para coordinar el análisis técnico de tu proyecto sin compromiso.
-              </p>
             </div>
           </div>
 

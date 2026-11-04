@@ -3,11 +3,10 @@ import { Navbar } from './components/Navbar.tsx';
 import { Hero } from './components/Hero.tsx';
 import { AboutUs } from './components/AboutUs.tsx';
 import { ServicesSection } from './components/ServicesSection.tsx';
-import { BeforeAfterProcess } from './components/BeforeAfterProcess.tsx';
-import { ValuesSection } from './components/ValuesSection.tsx';
 import { ProjectsPortfolio } from './components/ProjectsPortfolio.tsx';
+import { SuppliersSection } from './components/SuppliersSection.tsx';
+import { ClientsTrustSection } from './components/ClientsTrustSection.tsx';
 import { ContactSection } from './components/ContactSection.tsx';
-import { FAQSection } from './components/FAQSection.tsx';
 import { AnimatedWhatsAppButton } from './components/AnimatedWhatsAppButton.tsx';
 import { Footer } from './components/Footer.tsx';
 import { AdminVideoModal } from './components/AdminVideoModal.tsx';
@@ -65,7 +64,7 @@ export default function App() {
 
   const handleQuoteSimilarProject = (projectName: string) => {
     setQuoteData({
-      workType: `Proyecto similar a: ${projectName}`,
+      workType: `Consulta por obra similar: ${projectName}`,
     });
     scrollToSection('contacto');
   };
@@ -89,24 +88,19 @@ export default function App() {
         {/* Quiénes Somos / Institucional */}
         <AboutUs onOpenContact={() => scrollToSection('contacto')} />
 
-        {/* 5 Unidades de Negocio & Servicios */}
+        {/* Unidades de Negocio & Servicios */}
         <ServicesSection
           onSelectServiceForQuote={handleSelectServiceForQuote}
         />
 
-        {/* Obras y Proyectos Realizados */}
-        <ProjectsPortfolio
-          onQuoteSimilar={handleQuoteSimilarProject}
-        />
+        {/* Proyectos Realizados y en Marcha */}
+        <ProjectsPortfolio onQuoteSimilar={handleQuoteSimilarProject} />
 
-        {/* Detrás de Escena: Antes / Proceso / Después */}
-        <BeforeAfterProcess />
+        {/* Proveedores con los que trabajamos */}
+        <SuppliersSection />
 
-        {/* 4 Valores Fundamentales */}
-        <ValuesSection />
-
-        {/* FAQ - Transparencia en Plazos, Materiales y Pagos */}
-        <FAQSection onOpenContact={() => scrollToSection('contacto')} />
+        {/* Quiénes Confiaron en Nosotros */}
+        <ClientsTrustSection />
 
         {/* Sección de Contacto Directo */}
         <ContactSection prefilledData={quoteData} />

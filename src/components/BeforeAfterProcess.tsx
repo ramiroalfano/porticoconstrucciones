@@ -91,6 +91,8 @@ export const BeforeAfterProcess: React.FC = () => {
               alt={currentStage.title}
               className="w-full h-full object-cover transition-all duration-500 hover:scale-105"
               referrerPolicy="no-referrer"
+              loading="lazy"
+              decoding="async"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
 

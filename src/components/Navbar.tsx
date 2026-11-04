@@ -20,10 +20,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact, onScrollToSection
   }, []);
 
   const navLinks = [
+    { label: 'Quiénes Somos', id: 'quienes-somos' },
     { label: 'Servicios', id: 'servicios' },
-    { label: 'Obras', id: 'obras' },
-    { label: 'Valores', id: 'valores' },
-    { label: 'Preguntas', id: 'faq' },
+    { label: 'Proyectos', id: 'obras' },
+    { label: 'Proveedores', id: 'proveedores' },
     { label: 'Contacto', id: 'contacto' },
   ];
 

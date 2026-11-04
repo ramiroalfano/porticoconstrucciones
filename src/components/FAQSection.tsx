@@ -33,96 +33,96 @@ const FAQ_ITEMS: FAQItem[] = [
   {
     id: 'faq-plazos-garantia',
     category: 'plazos',
-    question: '¿Cómo estiman y garantizan los plazos de entrega de una obra?',
+    question: '¿Cómo garantizan los plazos de entrega?',
     answer:
-      'Antes de firmar el contrato, elaboramos un cronograma integral detallado mediante diagrama de Gantt y curva de avance físico-financiero. Definimos hitos claros para cada fase (demolición, fundaciones, estructura de hormigón, instalaciones y terminaciones). El plazo se fija contractualmente con cláusulas de penalización por demoras atribuibles a la empresa, garantizando certidumbre y compromiso legal.',
-    highlight: 'Compromiso contractual por escrito con curva de avance auditable.',
+      'Definimos un cronograma detallado por etapas antes de comenzar. El plazo final se estipula en el contrato con cláusulas de penalización por demoras atribuibles a la empresa.',
+    highlight: 'Plazos fijados por contrato con cronograma de avance.',
   },
   {
     id: 'faq-plazos-clima-tramites',
     category: 'plazos',
-    question: '¿Qué sucede ante imprevistos climáticos o demoras de permisos municipales?',
+    question: '¿Qué pasa ante lluvias o trámites municipales?',
     answer:
-      'En el pliego contractual estipulamos un coeficiente de días no laborables por inclemencias climáticas basado en registros meteorológicos históricos de la zona. Para los permisos municipales y factibilidades de servicios públicos (electricidad, agua, cloacas, gas), gestionamos los expedientes con antelación crítica en paralelo con el desarrollo del proyecto ejecutivo, emitiendo reportes semanales al comitente sobre cada avance administrativo.',
-    highlight: 'Gestión administrativa en paralelo y registro transparente de días de lluvia.',
+      'El contrato contempla días de lluvia según promedios climáticos de la zona. Paralelamente, gestionamos permisos municipales con anticipación para evitar demoras administrativas.',
+    highlight: 'Gestión ágil de trámites y registro transparente de días climáticos.',
   },
   {
     id: 'faq-plazos-duracion-promedio',
     category: 'plazos',
-    question: '¿Cuánto tiempo demanda habitualmente una construcción residencial o comercial?',
+    question: '¿Cuánto demora habitualmente una obra?',
     answer:
-      'Una vivienda unifamiliar de 200 a 350 m² llave en mano se ejecuta normalmente en un período de 8 a 12 meses, dependiendo de la complejidad topográfica y las terminaciones elegidas. Para obras comerciales, locales o reformas de oficinas de 80 a 250 m², los plazos se reducen a 45 a 90 días corridos gracias a cuadrillas especializadas con esquemas de turnos rotativos y extendidos.',
-    highlight: '8 a 12 meses para viviendas estándar / 45 a 90 días para locales comerciales.',
+      'Una vivienda unifamiliar demanda habitualmente de 8 a 12 meses según escala y terminaciones. Las reformas comerciales u oficinas se completan en 30 a 90 días.',
+    highlight: '8 a 12 meses para viviendas / 30 a 90 días para reformas comerciales.',
   },
 
   // 2. Materiales & Sourcing
   {
     id: 'faq-materiales-origen-calidad',
     category: 'materiales',
-    question: '¿De dónde provienen los materiales y cómo garantizan su calidad?',
+    question: '¿Qué materiales utilizan y cómo certifican su calidad?',
     answer:
-      'Adquirimos materiales exclusivamente de fábricas directas y distribuidores mayoristas de primera línea homologados (Loma Negra, Acindar, Klaukol, Ferrum, FV, Aluar, entre otros). Todos los insumos estructurales cuentan con certificación IRAM/ISO y remito de trazabilidad de lote. Además, en cada colada de hormigón elaborado extraemos probetas in situ que son testeadas por laboratorios independientes a los 7 y 28 días.',
-    highlight: 'Proveedores certificados IRAM/ISO y ensayos de laboratorio independientes.',
+      'Trabajamos con marcas líderes (Loma Negra, Acindar, Klaukol, Ferrum, FV, Aluar). Todo insumo estructural cuenta con certificación IRAM/ISO y ensayos de laboratorio.',
+    highlight: 'Marcas líderes con certificación IRAM/ISO.',
   },
   {
     id: 'faq-materiales-eleccion-cliente',
     category: 'materiales',
-    question: '¿El cliente puede seleccionar o suministrar terminaciones específicas?',
+    question: '¿Puedo elegir o aportar mis propias terminaciones?',
     answer:
-      'Sí, con total flexibilidad. Ofrecemos dos esquemas: 1) Partida presupuestaria asignada dentro del contrato para que elijas porcelanatos, griferías, artefactos y luminarias con el asesoramiento de nuestro equipo de diseño; o 2) Suministro directo por parte del cliente, donde nosotros nos ocupamos de la logística de recepción en obra, acopio seguro, verificación de calidad y colocación profesional certificada.',
-    highlight: 'Libertad absoluta de elección: catálogo propio o provisión directa por el cliente.',
+      'Sí, con total flexibilidad. Podés elegir los modelos dentro del presupuesto acordado o proveerlos directamente, y nuestro equipo se ocupa de la instalación profesional.',
+    highlight: 'Total flexibilidad para elegir o suministrar terminaciones.',
   },
   {
     id: 'faq-materiales-acopio-inflacion',
     category: 'materiales',
-    question: '¿Cómo protegen la obra ante el aumento de precios o escasez de materiales?',
+    question: '¿Cómo protegen la obra ante aumentos de precios?',
     answer:
-      'Implementamos una estrategia de acopio temprano de materiales críticos e insumos gruesos (hierro, cemento, áridos, cañerías termofusión y carpinterías de aluminio DVH) al momento del anticipo financiero. Esto congela los valores en depósitos y corralones aliados, blindando la obra ante variaciones de mercado y evitando paradas por quiebres de stock en la cadena logística.',
-    highlight: 'Acopio preventivo que congela precios y asegura disponibilidad de stock.',
+      'Efectuamos el acopio temprano de materiales críticos (cemento, hierro, cañerías) con el anticipo inicial. De esta manera congelamos valores y aseguramos stock en obra.',
+    highlight: 'Acopio preventivo para congelar precios y asegurar stock.',
   },
 
   // 3. Pagos & Transparencia Financiera
   {
     id: 'faq-pagos-modalidades',
     category: 'pagos',
-    question: '¿Cuáles son las formas y condiciones de pago disponibles?',
+    question: '¿Cuáles son las formas de contratación y pago?',
     answer:
-      'Ofrecemos dos modelos de contratación claros: 1) "Llave en Mano a Precio Cerrado" (un único valor integral acordado con cronograma de pagos previsible) y 2) "Por Administración / Costo y Costas" (pago según costo real de materiales y mano de obra con honorario fijo por dirección). Operamos mediante transferencias bancarias, cheques y acuerdos en moneda local o divisas con tipo de cambio de referencia explícito.',
-    highlight: 'Contratos llave en mano a precio cerrado o por administración transparente.',
+      'Podés contratar Llave en Mano a Precio Cerrado (presupuesto fijo) o Por Administración (costo real más honorario). Aceptamos transferencias y cheques.',
+    highlight: 'Contrato llave en mano a precio cerrado o por administración.',
   },
   {
     id: 'faq-pagos-estructura-cuotas',
     category: 'pagos',
-    question: '¿Cómo se estructuran los pagos durante el transcurso de la obra?',
+    question: '¿Cómo se van pagando las cuotas?',
     answer:
-      'El esquema tradicional se compone de un anticipo inicial (20% a 30%) destinado al replanteo, obrador y acopio de materiales básicos, seguido de desembolsos mensuales asociados a "Certificados de Avance de Obra Real". Cada certificación es auditada y firmada conjuntamente por nuestro Director de Obra y el comitente. Finalmente, un saldo de retención (5% a 10%) se cancela solo con la recepción definitiva y conformidad total.',
-    highlight: 'Solo pagás por metros cuadrados efectivamente construidos y certificados.',
+      'Se abona un anticipo inicial para replanteo y acopio, y luego desembolsos contra Certificados de Avance Real firmados conjuntamente. Solo pagás lo que se construye.',
+    highlight: 'Pagos contra avance de obra efectivamente certificado.',
   },
   {
     id: 'faq-pagos-costos-ocultos',
     category: 'pagos',
-    question: '¿El presupuesto inicial es definitivo o pueden existir costos ocultos?',
+    question: '¿Existen costos ocultos o imprevistos?',
     answer:
-      'Nuestra política es de transparencia absoluta y cero sorpresas. Cada propuesta incluye un cómputo métrico minucioso ítem por ítem: materiales, mano de obra, cargas sociales, seguros de ART y dirección técnica matriculada. Si durante la obra deseás incorporar cambios o ampliaciones sobre el proyecto original, se confecciona un "Adicional de Obra" con costo y plazo especificado que solo se ejecuta con tu aprobación previa por escrito.',
-    highlight: 'Cero costos ocultos: presupuestos analíticos desglosados ítem por ítem.',
+      'No. Cada presupuesto detalla materiales, mano de obra, seguros y dirección técnica. Cualquier cambio o adicional propuesto se aprueba previamente por escrito.',
+    highlight: 'Cero costos ocultos: presupuesto detallado ítem por ítem.',
   },
 
   // 4. Garantías & Supervisión
   {
     id: 'faq-garantias-supervision',
     category: 'garantias',
-    question: '¿Quién supervisa la obra día a día y cómo me entero de los avances?',
+    question: '¿Quién supervisa la obra y cómo sigo el avance?',
     answer:
-      'Cada proyecto cuenta con un Ingeniero Civil o Arquitecto matriculado asignado como Director de Obra permanente y un capataz de campo continuo. Emitimos reportes semanales con fotografías en alta definición, videos de avance, checklist de tareas concluidas y registro de libro de órdenes. Además, contás con un canal de comunicación directo y visitas programadas de obra.',
-    highlight: 'Dirección técnica matriculada diaria y reportes fotográficos semanales.',
+      'Asignamos un profesional matriculado y un capataz permanente en obra. Enviamos reportes periódicos con fotos y videos, con comunicación directa continua.',
+    highlight: 'Dirección técnica matriculada y fotos periódicas del avance.',
   },
   {
     id: 'faq-garantias-post-entrega',
     category: 'garantias',
-    question: '¿Qué garantías legales y técnicas respaldan la obra finalizada?',
+    question: '¿Qué garantía tiene la obra terminada?',
     answer:
-      'Entregamos garantía contractual formal por escrito: 12 meses de cobertura integral para vicios de terminación e instalaciones (sanitarias, pluviales, gas y eléctricas), y garantía decenal (10 años) sobre la solidez y estabilidad estructural conforme al Código Civil y Comercial. Con la entrega de llaves proporcionamos el plano conforme a obra digitalizado y el manual de mantenimiento preventivo.',
-    highlight: 'Garantía decenal de 10 años en estructura + 12 meses en instalaciones y acabados.',
+      'Entregamos garantía escrita: 10 años en estructura resistente según el Código Civil y Comercial, y 12 meses para terminaciones e instalaciones.',
+    highlight: 'Garantía decenal (10 años) estructural y 12 meses en instalaciones.',
   },
 ];
 
