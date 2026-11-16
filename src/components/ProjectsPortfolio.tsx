@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ArrowUpRight, MapPin, Maximize2, Calendar, Check, X } from 'lucide-react';
+import { ScrollReveal } from './ScrollReveal.tsx';
 
 interface ProjectsPortfolioProps {
   onQuoteSimilar: (projectName: string) => void;
@@ -35,7 +36,7 @@ export const ProjectsPortfolio: React.FC<ProjectsPortfolioProps> = ({ onQuoteSim
         'Estructura de hormigón y mampostería reforzada',
         'Fachada con aislamiento térmico y cartelería institucional',
         'Instalaciones eléctricas y sanitarias completas',
-        'Entrega llave en mano en plazo acordado',
+        'Entrega conforme a obra en plazo acordado',
       ],
     },
     {
@@ -144,114 +145,120 @@ export const ProjectsPortfolio: React.FC<ProjectsPortfolioProps> = ({ onQuoteSim
     <section id="obras" className="py-20 bg-[#F8F9FA] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header - Short and direct */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
-          <div>
-            <div className="flex items-center gap-2 text-xs font-semibold tracking-[0.2em] text-[#FF8A00] uppercase mb-2">
-              <span className="w-6 h-[2px] bg-[#FF8A00]" />
-              <span>Obras Reales</span>
+        <ScrollReveal direction="up" duration={700}>
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+            <div>
+              <div className="flex items-center gap-2 text-xs font-semibold tracking-[0.2em] text-[#FF8A00] uppercase mb-2">
+                <span className="w-6 h-[2px] bg-[#FF8A00]" />
+                <span>Obras Reales</span>
+              </div>
+              <h2 className="text-2xl sm:text-4xl font-extrabold text-[#1F2D3A] tracking-tight">
+                Trabajos Realizados y en Marcha
+              </h2>
             </div>
-            <h2 className="text-2xl sm:text-4xl font-extrabold text-[#1F2D3A] tracking-tight">
-              Trabajos Realizados y en Marcha
-            </h2>
+            <p className="text-xs sm:text-sm text-slate-600 max-w-md leading-relaxed">
+              Fotografías directas de nuestras obras civiles, comerciales y equipos de trabajo en terreno.
+            </p>
           </div>
-          <p className="text-xs sm:text-sm text-slate-600 max-w-md leading-relaxed">
-            Fotografías directas de nuestras obras civiles, comerciales y equipos de trabajo en terreno.
-          </p>
-        </div>
+        </ScrollReveal>
 
         {/* Filter Tabs */}
-        <div className="flex flex-wrap items-center gap-2 mb-8 pb-2 border-b border-slate-200">
-          {categories.map((cat) => (
-            <button
-              key={cat.id}
-              onClick={() => setActiveCategory(cat.id)}
-              className={`px-3.5 py-1.5 text-xs font-semibold rounded transition-all cursor-pointer whitespace-nowrap ${
-                activeCategory === cat.id
-                  ? 'bg-[#1F2D3A] text-white shadow-xs'
-                  : 'text-slate-600 hover:text-[#1F2D3A] hover:bg-slate-200'
-              }`}
-            >
-              {cat.label}
-            </button>
-          ))}
-        </div>
+        <ScrollReveal direction="up" duration={700} delay={100}>
+          <div className="flex flex-wrap items-center gap-2 mb-8 pb-2 border-b border-slate-200">
+            {categories.map((cat) => (
+              <button
+                key={cat.id}
+                onClick={() => setActiveCategory(cat.id)}
+                className={`px-3.5 py-1.5 text-xs font-semibold rounded transition-all cursor-pointer whitespace-nowrap ${
+                  activeCategory === cat.id
+                    ? 'bg-[#1F2D3A] text-white shadow-xs'
+                    : 'text-slate-600 hover:text-[#1F2D3A] hover:bg-slate-200'
+                }`}
+              >
+                {cat.label}
+              </button>
+            ))}
+          </div>
+        </ScrollReveal>
 
         {/* Projects Grid with Real Images */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-          {filteredProjects.map((proj) => (
-            <div
-              key={proj.id}
-              onClick={() => setSelectedProject(proj)}
-              className="group bg-white rounded-lg border border-slate-200 overflow-hidden shadow-xs hover:shadow-lg transition-all cursor-pointer flex flex-col justify-between"
-            >
-              <div>
-                {/* Image Frame */}
-                <div className="relative h-56 overflow-hidden bg-slate-900">
-                  <picture>
-                    <source srcSet={proj.image.replace(/\.(png|jpeg|jpg)$/, '.webp')} type="image/webp" />
-                    <img
-                      src={proj.image}
-                      alt={proj.title}
-                      loading="lazy"
-                      decoding="async"
-                      width={480}
-                      height={224}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                  </picture>
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent pointer-events-none" />
+        <ScrollReveal direction="up" duration={800} delay={180}>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+            {filteredProjects.map((proj) => (
+              <div
+                key={proj.id}
+                onClick={() => setSelectedProject(proj)}
+                className="group bg-white rounded-lg border border-slate-200 overflow-hidden shadow-xs hover:shadow-lg transition-all cursor-pointer flex flex-col justify-between"
+              >
+                <div>
+                  {/* Image Frame */}
+                  <div className="relative h-56 overflow-hidden bg-slate-900">
+                    <picture>
+                      <source srcSet={proj.image.replace(/\.(png|jpeg|jpg)$/, '.webp')} type="image/webp" />
+                      <img
+                        src={proj.image}
+                        alt={proj.title}
+                        loading="lazy"
+                        decoding="async"
+                        width={480}
+                        height={224}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                    </picture>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent pointer-events-none" />
 
-                  {/* Badge */}
-                  <div className="absolute top-3 left-3 px-2 py-0.5 bg-[#1F2D3A]/90 backdrop-blur-md rounded text-[10px] font-medium text-white border border-white/10">
-                    {proj.categoryLabel}
+                    {/* Badge */}
+                    <div className="absolute top-3 left-3 px-2 py-0.5 bg-[#1F2D3A]/90 backdrop-blur-md rounded text-[10px] font-medium text-white border border-white/10">
+                      {proj.categoryLabel}
+                    </div>
+
+                    <div className="absolute top-3 right-3 w-7 h-7 rounded-full bg-black/40 backdrop-blur-md text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                      <Maximize2 className="w-3.5 h-3.5" />
+                    </div>
+
+                    {/* Location strip */}
+                    <div className="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-xs text-white">
+                      <span className="flex items-center gap-1">
+                        <MapPin className="w-3.5 h-3.5 text-[#FF8A00]" />
+                        <span>{proj.location}</span>
+                      </span>
+                      <span className="font-mono text-xs font-semibold">{proj.area}</span>
+                    </div>
                   </div>
 
-                  <div className="absolute top-3 right-3 w-7 h-7 rounded-full bg-black/40 backdrop-blur-md text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                    <Maximize2 className="w-3.5 h-3.5" />
-                  </div>
+                  {/* Content - Short & punchy */}
+                  <div className="p-5">
+                    <h3 className="text-lg font-bold text-[#1F2D3A] group-hover:text-[#FF8A00] transition-colors mb-1.5">
+                      {proj.title}
+                    </h3>
+                    <p className="text-xs text-slate-600 line-clamp-2 leading-relaxed mb-3">
+                      {proj.headline}
+                    </p>
 
-                  {/* Location strip */}
-                  <div className="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-xs text-white">
-                    <span className="flex items-center gap-1">
-                      <MapPin className="w-3.5 h-3.5 text-[#FF8A00]" />
-                      <span>{proj.location}</span>
-                    </span>
-                    <span className="font-mono text-xs font-semibold">{proj.area}</span>
+                    <div className="flex items-center gap-3 text-xs text-slate-500 pt-2.5 border-t border-slate-100">
+                      <span className="flex items-center gap-1">
+                        <Calendar className="w-3.5 h-3.5 text-[#FF8A00]" />
+                        <span>Plazo: <strong>{proj.timeline}</strong></span>
+                      </span>
+                      <span>·</span>
+                      <span>Obra integral</span>
+                    </div>
                   </div>
                 </div>
 
-                {/* Content - Short & punchy */}
-                <div className="p-5">
-                  <h3 className="text-lg font-bold text-[#1F2D3A] group-hover:text-[#FF8A00] transition-colors mb-1.5">
-                    {proj.title}
-                  </h3>
-                  <p className="text-xs text-slate-600 line-clamp-2 leading-relaxed mb-3">
-                    {proj.headline}
-                  </p>
-
-                  <div className="flex items-center gap-3 text-xs text-slate-500 pt-2.5 border-t border-slate-100">
-                    <span className="flex items-center gap-1">
-                      <Calendar className="w-3.5 h-3.5 text-[#FF8A00]" />
-                      <span>Plazo: <strong>{proj.timeline}</strong></span>
-                    </span>
-                    <span>·</span>
-                    <span>Llave en mano</span>
-                  </div>
+                <div className="px-5 pb-5 pt-0">
+                  <button
+                    type="button"
+                    className="w-full py-2 px-3 rounded bg-slate-100 hover:bg-[#FF8A00] hover:text-white text-[#1F2D3A] text-xs font-bold uppercase tracking-wider transition-all flex items-center justify-center gap-1.5 cursor-pointer"
+                  >
+                    <span>Ver Detalles</span>
+                    <ArrowUpRight className="w-3.5 h-3.5" />
+                  </button>
                 </div>
               </div>
-
-              <div className="px-5 pb-5 pt-0">
-                <button
-                  type="button"
-                  className="w-full py-2 px-3 rounded bg-slate-100 hover:bg-[#FF8A00] hover:text-white text-[#1F2D3A] text-xs font-bold uppercase tracking-wider transition-all flex items-center justify-center gap-1.5 cursor-pointer"
-                >
-                  <span>Ver Detalles</span>
-                  <ArrowUpRight className="w-3.5 h-3.5" />
-                </button>
-              </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        </ScrollReveal>
       </div>
 
       {/* Project Detail Modal */}

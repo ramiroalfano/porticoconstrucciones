@@ -10,6 +10,8 @@
 
 html {
   font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
 
 /* Custom subtle scrollbar */
@@ -25,4 +27,25 @@ html {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #FF8A00;
+}
+
+/* Continuous carousel animation (Left to Right) */
+@keyframes marquee-ltr {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-marquee-ltr {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+  animation: marquee-ltr 35s linear infinite;
+}
+
+.animate-marquee-ltr:hover {
+  animation-play-state: paused;
 }

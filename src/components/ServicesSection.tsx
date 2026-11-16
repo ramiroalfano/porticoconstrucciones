@@ -10,6 +10,7 @@ import {
   X,
   FileCheck2
 } from 'lucide-react';
+import { ScrollReveal } from './ScrollReveal.tsx';
 
 interface ServicesSectionProps {
   onSelectServiceForQuote: (serviceName: string) => void;
@@ -28,16 +29,15 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
       icon: HardHat,
       headline: 'Obras Civiles, Comerciales y Residenciales',
       description:
-        'Ejecución llave en mano con provisión de materiales certificados, cuadrillas especializadas y dirección técnica en obra.',
+        'Ejecución técnica con provisión de materiales certificados, cuadrillas especializadas y dirección en obra.',
       keyPoints: [
         'Estructuras de hormigón armado y mampostería tradicional',
         'Contratos a precio cerrado sin sobrecostos imprevistos',
         'Personal con seguro ART y estricto cumplimiento de seguridad',
-        'Cómputos métricos detallados y libro de obra al día',
       ],
       typicalDuration: '4 a 18 meses según escala',
       targetAudience: 'Particulares, inversores y empresas',
-      contractType: 'Llave en mano / Ajuste alzado',
+      contractType: 'Ajuste alzado / Contrato por rubros',
     },
     {
       id: 'direccion',
@@ -52,7 +52,6 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
         'Certificación periódica de avances y control presupuestario',
         'Control riguroso de calidad de hormigón y materiales en obra',
         'Informes periódicos con estado de avance e incidencias',
-        'Supervisión del cumplimiento del plan de seguridad e higiene',
       ],
       typicalDuration: 'Durante toda la ejecución de la obra',
       targetAudience: 'Propietarios con proyecto o desarrolladores',
@@ -71,7 +70,6 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
         'Planos municipales y ejecutivos listos para construir',
         'Cálculo de estructuras portantes e instalaciones completas',
         'Gestión de aprobaciones, permisos y trámites municipales',
-        'Cómputo métrico y presupuesto estimativo desglosado',
       ],
       typicalDuration: '30 a 60 días',
       targetAudience: 'Clientes que inician obra desde cero',
@@ -90,7 +88,6 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
         'Renovación integral de fachadas, cubiertas e interiores',
         'Actualización de instalaciones sanitarias, gas y eléctricas',
         'Terminaciones de alta durabilidad y entrega limpia',
-        'Cronograma por fases para mantener actividades en curso',
       ],
       typicalDuration: '15 a 60 días',
       targetAudience: 'Comercios, empresas y propietarios particulares',
@@ -104,114 +101,120 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
     <section id="servicios" className="py-20 bg-[#1F2D3A] text-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
-          <div>
-            <div className="flex items-center gap-2 text-xs font-semibold tracking-[0.2em] text-[#FF8A00] uppercase mb-2">
-              <span className="w-6 h-[2px] bg-[#FF8A00]" />
-              <span>Nuestras Especialidades</span>
+        <ScrollReveal direction="up" duration={700}>
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+            <div>
+              <div className="flex items-center gap-2 text-xs font-semibold tracking-[0.2em] text-[#FF8A00] uppercase mb-2">
+                <span className="w-6 h-[2px] bg-[#FF8A00]" />
+                <span>Nuestras Especialidades</span>
+              </div>
+              <h2 className="text-2xl sm:text-4xl font-extrabold tracking-tight text-white">
+                Servicios de Construcción
+              </h2>
             </div>
-            <h2 className="text-2xl sm:text-4xl font-extrabold tracking-tight text-white">
-              Servicios de Construcción
-            </h2>
+            <p className="text-sm text-slate-300 max-w-md font-light leading-relaxed">
+              4 unidades de trabajo enfocadas en solidez técnica, plazos garantizados y control presupuestario riguroso.
+            </p>
           </div>
-          <p className="text-sm text-slate-300 max-w-md font-light leading-relaxed">
-            4 unidades de trabajo enfocadas en solidez técnica, plazos garantizados y control presupuestario riguroso.
-          </p>
-        </div>
+        </ScrollReveal>
 
         {/* 4 Cards Overview / Selector (Positioned on top) */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-          {services.map((srv, idx) => {
-            const Icon = srv.icon;
-            const isCurrent = selectedServiceIdx === idx;
-            return (
-              <div
-                key={srv.id}
-                onClick={() => setSelectedServiceIdx(idx)}
-                className={`p-5 rounded-lg border transition-all cursor-pointer ${
-                  isCurrent
-                    ? 'bg-[#192430] border-[#FF8A00] ring-1 ring-[#FF8A00] shadow-lg'
-                    : 'bg-[#16212B]/70 border-white/10 hover:border-white/30 hover:bg-[#16212B]'
-                }`}
-              >
-                <div className="flex items-center justify-between mb-3">
-                  <span className="text-[11px] font-mono text-[#FF8A00] font-bold">0{idx + 1}</span>
-                  <Icon className={`w-4 h-4 ${isCurrent ? 'text-white' : 'text-slate-300'}`} />
+        <ScrollReveal direction="up" duration={750} delay={150}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+            {services.map((srv, idx) => {
+              const Icon = srv.icon;
+              const isCurrent = selectedServiceIdx === idx;
+              return (
+                <div
+                  key={srv.id}
+                  onClick={() => setSelectedServiceIdx(idx)}
+                  className={`p-5 rounded-lg border transition-all cursor-pointer ${
+                    isCurrent
+                      ? 'bg-[#192430] border-[#FF8A00] ring-1 ring-[#FF8A00] shadow-lg'
+                      : 'bg-[#16212B]/70 border-white/10 hover:border-white/30 hover:bg-[#16212B]'
+                  }`}
+                >
+                  <div className="flex items-center justify-between mb-3">
+                    <span className="text-[11px] font-mono text-[#FF8A00] font-bold">0{idx + 1}</span>
+                    <Icon className={`w-4 h-4 ${isCurrent ? 'text-white' : 'text-slate-300'}`} />
+                  </div>
+                  <h4 className="text-sm font-bold text-white mb-1.5">{srv.title}</h4>
+                  <p className="text-xs text-slate-400 line-clamp-2 leading-relaxed mb-3">
+                    {srv.description}
+                  </p>
+                  <span className="text-[11px] font-semibold text-[#FF8A00] flex items-center gap-1">
+                    <span>Ver detalles</span>
+                    <ChevronRight className="w-3 h-3" />
+                  </span>
                 </div>
-                <h4 className="text-sm font-bold text-white mb-1.5">{srv.title}</h4>
-                <p className="text-xs text-slate-400 line-clamp-2 leading-relaxed mb-3">
-                  {srv.description}
-                </p>
-                <span className="text-[11px] font-semibold text-[#FF8A00] flex items-center gap-1">
-                  <span>Ver detalles</span>
-                  <ChevronRight className="w-3 h-3" />
-                </span>
-              </div>
-            );
-          })}
-        </div>
+              );
+            })}
+          </div>
+        </ScrollReveal>
 
         {/* Main Service Detailed Spec Panel (100% Text & Iconography - No Images) */}
-        <div className="bg-[#192430] border border-white/10 rounded-lg p-6 sm:p-10 shadow-xl">
-          <div className="flex flex-col lg:flex-row lg:items-start justify-between gap-8 pb-8 border-b border-white/10">
-            <div>
-              <div className="flex items-center gap-3 text-xs font-semibold text-[#FF8A00] uppercase tracking-wider mb-2">
-                <span className="px-2 py-0.5 rounded bg-[#FF8A00]/20 border border-[#FF8A00]/30 font-mono">
-                  UNIDAD {current.number} / 04
-                </span>
-                <span>{current.headline}</span>
+        <ScrollReveal direction="up" duration={800} delay={250}>
+          <div className="bg-[#192430] border border-white/10 rounded-lg p-6 sm:p-10 shadow-xl">
+            <div className="flex flex-col lg:flex-row lg:items-start justify-between gap-8 pb-8 border-b border-white/10">
+              <div>
+                <div className="flex items-center gap-3 text-xs font-semibold text-[#FF8A00] uppercase tracking-wider mb-2">
+                  <span className="px-2 py-0.5 rounded bg-[#FF8A00]/20 border border-[#FF8A00]/30 font-mono">
+                    UNIDAD {current.number} / 04
+                  </span>
+                  <span>{current.headline}</span>
+                </div>
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-white mb-3">
+                  {current.title}
+                </h3>
+                <p className="text-sm sm:text-base text-slate-300 leading-relaxed max-w-2xl">
+                  {current.description}
+                </p>
               </div>
-              <h3 className="text-2xl sm:text-3xl font-extrabold text-white mb-3">
-                {current.title}
-              </h3>
-              <p className="text-sm sm:text-base text-slate-300 leading-relaxed max-w-2xl">
-                {current.description}
-              </p>
-            </div>
 
-            {/* Quick Action Buttons */}
-            <div className="flex flex-col sm:flex-row lg:flex-col gap-3 shrink-0">
-              <button
-                onClick={() => onSelectServiceForQuote(current.title)}
-                className="px-6 py-3.5 text-xs font-bold uppercase tracking-wider text-white bg-[#FF8A00] hover:bg-[#e07900] active:scale-[0.98] transition-all rounded shadow-md flex items-center justify-center gap-2 cursor-pointer"
-              >
-                <span>Pedir Cotización</span>
-                <ArrowRight className="w-4 h-4" />
-              </button>
-              <button
-                onClick={() => setModalService(current)}
-                className="px-5 py-3 text-xs font-medium text-slate-300 hover:text-white bg-white/5 hover:bg-white/10 border border-white/10 transition-colors rounded flex items-center justify-center gap-2 cursor-pointer"
-              >
-                <FileCheck2 className="w-3.5 h-3.5 text-[#FF8A00]" />
-                <span>Ver Ficha Técnica</span>
-              </button>
-            </div>
-          </div>
-
-          {/* Key Deliverables & Specifications */}
-          <div className="pt-8">
-            {/* Scope Bullet Points */}
-            <div>
-              <h4 className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-4 flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#FF8A00]" />
-                Alcance y Garantías de Ejecución
-              </h4>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
-                {current.keyPoints.map((point, i) => (
-                  <div
-                    key={i}
-                    className="p-3.5 rounded bg-[#16212B] border border-white/5 flex items-start gap-3"
-                  >
-                    <CheckCircle className="w-4 h-4 text-[#FF8A00] shrink-0 mt-0.5" />
-                    <span className="text-xs sm:text-sm text-slate-200 leading-relaxed">
-                      {point}
-                    </span>
-                  </div>
-                ))}
+              {/* Quick Action Buttons */}
+              <div className="flex flex-col sm:flex-row lg:flex-col gap-3 shrink-0">
+                <button
+                  onClick={() => onSelectServiceForQuote(current.title)}
+                  className="px-6 py-3.5 text-xs font-bold uppercase tracking-wider text-white bg-[#FF8A00] hover:bg-[#e07900] active:scale-[0.98] transition-all rounded shadow-md flex items-center justify-center gap-2 cursor-pointer"
+                >
+                  <span>Pedir Cotización</span>
+                  <ArrowRight className="w-4 h-4" />
+                </button>
+                <button
+                  onClick={() => setModalService(current)}
+                  className="px-5 py-3 text-xs font-medium text-slate-300 hover:text-white bg-white/5 hover:bg-white/10 border border-white/10 transition-colors rounded flex items-center justify-center gap-2 cursor-pointer"
+                >
+                  <FileCheck2 className="w-3.5 h-3.5 text-[#FF8A00]" />
+                  <span>Ver Ficha Técnica</span>
+                </button>
               </div>
             </div>
+
+            {/* Key Deliverables & Specifications */}
+            <div className="pt-8">
+              {/* Scope Bullet Points */}
+              <div>
+                <h4 className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-4 flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#FF8A00]" />
+                  Alcance y Garantías de Ejecución
+                </h4>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5">
+                  {current.keyPoints.map((point, i) => (
+                    <div
+                      key={i}
+                      className="p-3.5 rounded bg-[#16212B] border border-white/5 flex items-start gap-3"
+                    >
+                      <CheckCircle className="w-4 h-4 text-[#FF8A00] shrink-0 mt-0.5" />
+                      <span className="text-xs sm:text-sm text-slate-200 leading-relaxed">
+                        {point}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
+        </ScrollReveal>
       </div>
 
       {/* Technical Sheet Modal */}

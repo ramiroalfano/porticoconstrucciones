@@ -22,7 +22,7 @@ export const Footer: React.FC<FooterProps> = ({ onScrollToSection, onOpenAdmin }
               <PorticoLogo variant="light" size="md" showSubtitle={true} />
             </div>
             <p className="text-slate-400 leading-relaxed max-w-sm mb-6">
-              Grandes proyectos, mejores historias. Empresa constructora especializada en obras civiles, dirección técnica, remodelaciones comerciales y desarrollos inmobiliarios llave en mano.
+              Grandes proyectos, mejores historias. Empresa constructora especializada en obras civiles, dirección técnica, remodelaciones comerciales y desarrollos inmobiliarios a medida.
             </p>
             <div className="flex items-center gap-4 text-[11px] text-slate-300">
               <div className="flex items-center gap-1.5">

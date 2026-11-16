@@ -30,7 +30,7 @@ export const BeforeAfterProcess: React.FC = () => {
     {
       id: 'despues',
       label: 'Después',
-      title: 'Entrega Llave en Mano',
+      title: 'Entrega Conforme a Obra',
       subtitle: 'Espacios funcionales de alta gama listos para habitar o producir',
       image: '/images/facade_renovation_finished_1792078679765.jpg',
       badge: 'Obra Finalizada',

@@ -10,6 +10,7 @@ import { ContactSection } from './components/ContactSection.tsx';
 import { AnimatedWhatsAppButton } from './components/AnimatedWhatsAppButton.tsx';
 import { Footer } from './components/Footer.tsx';
 import { AdminVideoModal } from './components/AdminVideoModal.tsx';
+import { ScrollProgressBar } from './components/ScrollProgressBar.tsx';
 
 export default function App() {
   const [isAdminVideoOpen, setIsAdminVideoOpen] = useState(false);
@@ -71,6 +72,9 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#F8F9FA] text-[#1F2D3A] flex flex-col selection:bg-[#FF8A00] selection:text-white">
+      {/* Scroll Progress Indicator */}
+      <ScrollProgressBar />
+
       {/* Top Bar Navigation */}
       <Navbar
         onOpenContact={() => scrollToSection('contacto')}

@@ -133,10 +133,6 @@ export const Hero: React.FC<HeroProps> = ({ onScrollToSection, onOpenContact }) 
               <ShieldCheck className="w-4 h-4 text-[#FF8A00]" />
               <span>Personal 100% asegurado (ART)</span>
             </div>
-            <div className="flex items-center gap-2">
-              <span className="text-slate-400">·</span>
-              <span>Presupuesto sin costos ocultos</span>
-            </div>
           </div>
         </div>
       </div>
@@ -144,7 +140,7 @@ export const Hero: React.FC<HeroProps> = ({ onScrollToSection, onOpenContact }) 
       {/* Quantitative Proof Strip */}
       <div className="relative z-10 border-t border-white/10 bg-[#16212B]/90 backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 divide-y md:divide-y-0 md:divide-x divide-white/10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 divide-y md:divide-y-0 md:divide-x divide-white/10">
             <div className="pt-2 md:pt-0">
               <div className="text-2xl sm:text-3xl font-extrabold text-white font-mono tabular-nums">
                 +12 <span className="text-[#FF8A00]">Años</span>
@@ -169,15 +165,6 @@ export const Hero: React.FC<HeroProps> = ({ onScrollToSection, onOpenContact }) 
               </div>
               <p className="text-xs text-slate-400 mt-1 uppercase tracking-wide">
                 Cumplimiento de plazos contractuales
-              </p>
-            </div>
-
-            <div className="pt-4 md:pt-0 md:pl-8">
-              <div className="text-2xl sm:text-3xl font-extrabold text-white font-mono tabular-nums">
-                +140
-              </div>
-              <p className="text-xs text-slate-400 mt-1 uppercase tracking-wide">
-                Proyectos entregados llave en mano
               </p>
             </div>
           </div>

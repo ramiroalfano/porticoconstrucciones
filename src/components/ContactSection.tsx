@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Clock, Send, CheckCircle2, MessageSquare } from 'lucide-react';
+import { ScrollReveal } from './ScrollReveal.tsx';
 
 interface ContactSectionProps {
   prefilledData?: {
@@ -59,93 +60,97 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ prefilledData })
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
           {/* Left Column: Direct Coordinates from Brand Card Image 5 & 10 */}
           <div className="lg:col-span-5 flex flex-col justify-between">
-            <div>
-              <div className="flex items-center gap-2 text-xs font-semibold tracking-[0.2em] text-[#FF8A00] uppercase mb-3">
-                <span className="w-6 h-[2px] bg-[#FF8A00]" />
-                <span>Contacto Directo</span>
+            <ScrollReveal direction="right" duration={800}>
+              <div>
+                <div className="flex items-center gap-2 text-xs font-semibold tracking-[0.2em] text-[#FF8A00] uppercase mb-3">
+                  <span className="w-6 h-[2px] bg-[#FF8A00]" />
+                  <span>Contacto Directo</span>
+                </div>
+
+                <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1F2D3A] tracking-tight mb-3">
+                  ¿Tenés un proyecto en mente? <br />
+                  <span className="text-[#FF8A00]">Hablemos.</span>
+                </h2>
+
+                <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-8">
+                  Evaluamos tu proyecto o planos y te enviamos una cotización clara y detallada.
+                </p>
+
+                {/* Coordinates List */}
+                <div className="space-y-6 mb-8">
+                  <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 rounded bg-[#1F2D3A] text-[#FF8A00] flex items-center justify-center shrink-0">
+                      <Phone className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider">
+                        Atención Comercial & Obras
+                      </h4>
+                      <a
+                        href="tel:+5491112345678"
+                        className="text-base font-bold text-[#1F2D3A] hover:text-[#FF8A00] transition-colors"
+                      >
+                        +54 9 11 1234 5678
+                      </a>
+                      <p className="text-xs text-slate-500 mt-0.5">Línea directa y WhatsApp corporativo</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 rounded bg-[#1F2D3A] text-[#FF8A00] flex items-center justify-center shrink-0">
+                      <Mail className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider">
+                        Correo Electrónico
+                      </h4>
+                      <a
+                        href="mailto:info@portico.com.ar"
+                        className="text-base font-bold text-[#1F2D3A] hover:text-[#FF8A00] transition-colors"
+                      >
+                        info@portico.com.ar
+                      </a>
+                      <p className="text-xs text-slate-500 mt-0.5">Recepción de pliegos y proyectos</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 rounded bg-[#1F2D3A] text-[#FF8A00] flex items-center justify-center shrink-0">
+                      <MapPin className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider">
+                        Oficinas Centrales
+                      </h4>
+                      <p className="text-base font-bold text-[#1F2D3A]">
+                        Av. Siempre Viva 1234
+                      </p>
+                      <p className="text-xs text-slate-500 mt-0.5">Buenos Aires, Argentina</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 rounded bg-[#1F2D3A] text-[#FF8A00] flex items-center justify-center shrink-0">
+                      <Clock className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider">
+                        Horario de Atención
+                      </h4>
+                      <p className="text-sm font-semibold text-[#1F2D3A]">
+                        Lunes a Viernes de 08:00 a 18:00 hs
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
-
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1F2D3A] tracking-tight mb-3">
-                ¿Tenés un proyecto en mente? <br />
-                <span className="text-[#FF8A00]">Hablemos.</span>
-              </h2>
-
-              <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-8">
-                Evaluamos tu proyecto o planos y te enviamos una cotización clara y detallada sin cargo.
-              </p>
-
-              {/* Coordinates List */}
-              <div className="space-y-6 mb-8">
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded bg-[#1F2D3A] text-[#FF8A00] flex items-center justify-center shrink-0">
-                    <Phone className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider">
-                      Atención Comercial & Obras
-                    </h4>
-                    <a
-                      href="tel:+5491112345678"
-                      className="text-base font-bold text-[#1F2D3A] hover:text-[#FF8A00] transition-colors"
-                    >
-                      +54 9 11 1234 5678
-                    </a>
-                    <p className="text-xs text-slate-500 mt-0.5">Línea directa y WhatsApp corporativo</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded bg-[#1F2D3A] text-[#FF8A00] flex items-center justify-center shrink-0">
-                    <Mail className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider">
-                      Correo Electrónico
-                    </h4>
-                    <a
-                      href="mailto:info@portico.com.ar"
-                      className="text-base font-bold text-[#1F2D3A] hover:text-[#FF8A00] transition-colors"
-                    >
-                      info@portico.com.ar
-                    </a>
-                    <p className="text-xs text-slate-500 mt-0.5">Recepción de pliegos y proyectos</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded bg-[#1F2D3A] text-[#FF8A00] flex items-center justify-center shrink-0">
-                    <MapPin className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider">
-                      Oficinas Centrales
-                    </h4>
-                    <p className="text-base font-bold text-[#1F2D3A]">
-                      Av. Siempre Viva 1234
-                    </p>
-                    <p className="text-xs text-slate-500 mt-0.5">Buenos Aires, Argentina</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded bg-[#1F2D3A] text-[#FF8A00] flex items-center justify-center shrink-0">
-                    <Clock className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider">
-                      Horario de Atención
-                    </h4>
-                    <p className="text-sm font-semibold text-[#1F2D3A]">
-                      Lunes a Viernes de 08:00 a 18:00 hs
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            </ScrollReveal>
           </div>
 
           {/* Right Column: Lead Form */}
-          <div className="lg:col-span-7 bg-[#F8F9FA] border border-slate-200 rounded-lg p-6 sm:p-10 shadow-sm">
+          <div className="lg:col-span-7">
+            <ScrollReveal direction="left" duration={800} delay={150}>
+              <div className="bg-[#F8F9FA] border border-slate-200 rounded-lg p-6 sm:p-10 shadow-sm">
             {isSubmitted ? (
               <div className="py-12 text-center">
                 <div className="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 mx-auto flex items-center justify-center mb-4">
@@ -293,6 +298,8 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ prefilledData })
                 </p>
               </form>
             )}
+              </div>
+            </ScrollReveal>
           </div>
         </div>
       </div>
