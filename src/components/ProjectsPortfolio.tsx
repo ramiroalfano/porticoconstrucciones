@@ -25,7 +25,7 @@ export const ProjectsPortfolio: React.FC<ProjectsPortfolioProps> = ({ onQuoteSim
       title: 'Edificio & Sede Comercial',
       category: 'comercial',
       categoryLabel: 'Comercial & Edificios',
-      location: 'Buenos Aires',
+      location: 'Ciudad de Mendoza',
       area: '1.200 m²',
       timeline: '10 Meses',
       image: '/imgreal/07_fachada_edificio.png',
@@ -33,7 +33,7 @@ export const ProjectsPortfolio: React.FC<ProjectsPortfolioProps> = ({ onQuoteSim
       summary:
         'Ejecución completa de fachada comercial, carpinterías de aluminio, pisos y adecuación de espacios corporativos.',
       highlights: [
-        'Estructura de hormigón y mampostería reforzada',
+        'Estructura de hormigón armado sismorresistente',
         'Fachada con aislamiento térmico y cartelería institucional',
         'Instalaciones eléctricas y sanitarias completas',
         'Entrega conforme a obra en plazo acordado',
@@ -44,13 +44,13 @@ export const ProjectsPortfolio: React.FC<ProjectsPortfolioProps> = ({ onQuoteSim
       title: 'Estructura & Hormigón Armado',
       category: 'civil',
       categoryLabel: 'Obra Civil & Hormigón',
-      location: 'Gran Buenos Aires',
+      location: 'Luján de Cuyo, Mendoza',
       area: '3.400 m²',
       timeline: '8 Meses',
       image: '/imgreal/WhatsApp Image 2026-10-28 at 16.18.24.jpeg',
       headline: 'Montaje de encofrados, hierros y colada de hormigón.',
       summary:
-        'Trabajo estructural pesado con control estricto de probetas de hormigón y cumplimiento de normas de seguridad.',
+        'Trabajo estructural pesado bajo normativa INPRES-CIRSOC con control estricto de probetas y normas de seguridad.',
       highlights: [
         'Hormigón elaborado ensayado en laboratorio',
         'Supervisión continua de dirección de obra',
@@ -63,13 +63,13 @@ export const ProjectsPortfolio: React.FC<ProjectsPortfolioProps> = ({ onQuoteSim
       title: 'Logística y Operación en Obra',
       category: 'logistica',
       categoryLabel: 'Logística & Campo',
-      location: 'Provincia de Buenos Aires',
+      location: 'Gran Mendoza',
       area: 'Operación Integral',
       timeline: 'Permanente',
       image: '/imgreal/08_camioneta_completa.png',
       headline: 'Flota propia y equipamiento en cada frente de trabajo.',
       summary:
-        'Movilización rápida de personal técnico, herramientas y fiscalización constante en sitio.',
+        'Movilización rápida de personal técnico, herramientas y fiscalización constante en sitio en toda la provincia.',
       highlights: [
         'Vehículos propios equipados para traslados y supervisión',
         'Abastecimiento ágil de materiales en obra',
@@ -82,7 +82,7 @@ export const ProjectsPortfolio: React.FC<ProjectsPortfolioProps> = ({ onQuoteSim
       title: 'Dirección Técnica y Seguridad',
       category: 'civil',
       categoryLabel: 'Obra Civil & Hormigón',
-      location: 'Zona Norte',
+      location: 'Chacras de Coria, Mendoza',
       area: '1.850 m²',
       timeline: '6 Meses',
       image: '/imgreal/09_casco_y_banner(2).png',
@@ -101,7 +101,7 @@ export const ProjectsPortfolio: React.FC<ProjectsPortfolioProps> = ({ onQuoteSim
       title: 'Puesta en Valor e Interiores',
       category: 'reformas',
       categoryLabel: 'Remodelaciones',
-      location: 'CABA',
+      location: 'Godoy Cruz, Mendoza',
       area: '650 m²',
       timeline: '3 Meses',
       image: '/imgreal/WhatsApp Image 2026-10-28 at 16.18.23 (1).jpeg',
@@ -120,7 +120,7 @@ export const ProjectsPortfolio: React.FC<ProjectsPortfolioProps> = ({ onQuoteSim
       title: 'Obra Civil y Cimientos',
       category: 'civil',
       categoryLabel: 'Obra Civil & Hormigón',
-      location: 'Buenos Aires',
+      location: 'Maipú, Mendoza',
       area: '2.100 m²',
       timeline: '7 Meses',
       image: '/imgreal/WhatsApp Image 2026-10-28 at 16.18.24 (1).jpeg',
@@ -150,14 +150,14 @@ export const ProjectsPortfolio: React.FC<ProjectsPortfolioProps> = ({ onQuoteSim
             <div>
               <div className="flex items-center gap-2 text-xs font-semibold tracking-[0.2em] text-[#FF8A00] uppercase mb-2">
                 <span className="w-6 h-[2px] bg-[#FF8A00]" />
-                <span>Obras Reales</span>
+                <span>Obras Reales en Mendoza</span>
               </div>
               <h2 className="text-2xl sm:text-4xl font-extrabold text-[#1F2D3A] tracking-tight">
                 Trabajos Realizados y en Marcha
               </h2>
             </div>
             <p className="text-xs sm:text-sm text-slate-600 max-w-md leading-relaxed">
-              Fotografías directas de nuestras obras civiles, comerciales y equipos de trabajo en terreno.
+              Fotografías directas de nuestras obras civiles, comerciales y equipos de trabajo desplegados en Mendoza.
             </p>
           </div>
         </ScrollReveal>
@@ -197,7 +197,7 @@ export const ProjectsPortfolio: React.FC<ProjectsPortfolioProps> = ({ onQuoteSim
                       <source srcSet={proj.image.replace(/\.(png|jpeg|jpg)$/, '.webp')} type="image/webp" />
                       <img
                         src={proj.image}
-                        alt={proj.title}
+                        alt={`${proj.title} en ${proj.location} - Pórtico Construcciones`}
                         loading="lazy"
                         decoding="async"
                         width={480}
@@ -270,7 +270,7 @@ export const ProjectsPortfolio: React.FC<ProjectsPortfolioProps> = ({ onQuoteSim
                 <source srcSet={selectedProject.image.replace(/\.(png|jpeg|jpg)$/, '.webp')} type="image/webp" />
                 <img
                   src={selectedProject.image}
-                  alt={selectedProject.title}
+                  alt={`${selectedProject.title} en ${selectedProject.location} - Pórtico Construcciones`}
                   decoding="async"
                   className="w-full h-full object-cover"
                 />

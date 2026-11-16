@@ -43,7 +43,7 @@ export const AboutUs: React.FC<AboutUsProps> = ({ onOpenContact }) => {
                   <source srcSet="/imgreal/07_fachada_edificio.webp" type="image/webp" />
                   <img
                     src="/imgreal/07_fachada_edificio.png"
-                    alt="Fachada corporativa de Pórtico Construcciones"
+                    alt="Fachada corporativa de Pórtico Construcciones en Mendoza, Argentina"
                     className="w-full h-[380px] sm:h-[430px] object-cover hover:scale-103 transition-transform duration-500"
                     loading="lazy"
                     decoding="async"
@@ -60,7 +60,7 @@ export const AboutUs: React.FC<AboutUsProps> = ({ onOpenContact }) => {
                   </p>
                   <div className="mt-2 flex items-center justify-between text-xs text-slate-300">
                     <span className="font-semibold text-[#FF8A00]">Pórtico Construcciones</span>
-                    <span>Sede Central & Obras</span>
+                    <span>Sede Central · Mendoza</span>
                   </div>
                 </div>
               </div>
@@ -72,7 +72,7 @@ export const AboutUs: React.FC<AboutUsProps> = ({ onOpenContact }) => {
                     <source srcSet="/imgreal/04_casco_con_logo.webp" type="image/webp" />
                     <img
                       src="/imgreal/04_casco_con_logo.png"
-                      alt="Casco oficial con logo Pórtico"
+                      alt="Casco oficial de obra Pórtico Construcciones Mendoza"
                       className="w-full h-full object-cover"
                       loading="lazy"
                       decoding="async"
@@ -85,7 +85,7 @@ export const AboutUs: React.FC<AboutUsProps> = ({ onOpenContact }) => {
                   <span className="text-[10px] font-bold text-[#1F2D3A] uppercase tracking-wider block">
                     Seguridad & Calidad
                   </span>
-                  <span className="text-[9px] text-slate-500">Supervisión en obra</span>
+                  <span className="text-[9px] text-slate-500">Normas INPRES-CIRSOC</span>
                 </div>
               </div>
             </ScrollReveal>
@@ -96,19 +96,19 @@ export const AboutUs: React.FC<AboutUsProps> = ({ onOpenContact }) => {
             <ScrollReveal direction="left" duration={800} delay={150}>
               <div className="flex items-center gap-2 text-xs font-semibold tracking-[0.2em] text-[#FF8A00] uppercase mb-2">
                 <span className="w-6 h-[2px] bg-[#FF8A00]" />
-                <span>Quiénes Somos</span>
+                <span>Quiénes Somos · Mendoza</span>
               </div>
 
               <h2 className="text-2xl sm:text-4xl font-extrabold text-[#1F2D3A] tracking-tight leading-tight mb-4">
-                Construcción sólida, previsible y sin sorpresas.
+                Construcción sólida, sismorresistente y sin sorpresas.
               </h2>
 
               <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-4">
-                En <strong className="text-[#1F2D3A]">Pórtico Construcciones</strong> gestionamos obras civiles, comerciales y residenciales de principio a fin. Aseguramos ingeniería de precisión, control estricto de costos y cumplimiento contractual de los tiempos de entrega.
+                En <strong className="text-[#1F2D3A]">Pórtico Construcciones</strong> somos una empresa constructora de Mendoza que gestiona obras civiles, comerciales y residenciales en todo el Gran Mendoza. Aseguramos ingeniería de precisión, estricto cumplimiento sismorresistente y control de costos.
               </p>
 
               <p className="text-sm text-slate-600 leading-relaxed mb-6">
-                Contás con un solo responsable a cargo y asesoramiento técnico continuo en cada fase constructiva.
+                Contás con un único responsable técnico matriculado a cargo y asesoramiento continuo en cada etapa constructiva.
               </p>
 
               {/* Highlights Grid - Short & crisp */}

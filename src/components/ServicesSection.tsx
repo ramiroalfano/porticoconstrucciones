@@ -27,11 +27,11 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
       title: 'Construcción Integral',
       shortTitle: 'Construcción Integral',
       icon: HardHat,
-      headline: 'Obras Civiles, Comerciales y Residenciales',
+      headline: 'Obras Civiles, Comerciales y Residenciales en Mendoza',
       description:
-        'Ejecución técnica con provisión de materiales certificados, cuadrillas especializadas y dirección en obra.',
+        'Ejecución técnica sismorresistente con provisión de materiales certificados, cuadrillas especializadas y dirección en obra en todo Mendoza.',
       keyPoints: [
-        'Estructuras de hormigón armado y mampostería tradicional',
+        'Estructuras de hormigón armado bajo normas INPRES-CIRSOC',
         'Contratos a precio cerrado sin sobrecostos imprevistos',
         'Personal con seguro ART y estricto cumplimiento de seguridad',
       ],
@@ -45,7 +45,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
       title: 'Dirección de Obra',
       shortTitle: 'Dirección de Obra',
       icon: FileSpreadsheet,
-      headline: 'Control Técnico, Plazos y Calidad',
+      headline: 'Control Técnico, Plazos y Calidad en Obra',
       description:
         'Supervisión técnica permanente, coordinación integral de gremios y verificación de materiales en cada etapa constructiva.',
       keyPoints: [
@@ -65,10 +65,10 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
       icon: Compass,
       headline: 'Diseño Arquitectónico y Planos Ejecutivos',
       description:
-        'Desarrollo de proyectos ejecutables, optimizando metros cuadrados y presupuesto para construir con máxima eficiencia.',
+        'Desarrollo de proyectos ejecutables en Mendoza, optimizando metros cuadrados y presupuesto para construir con máxima eficiencia.',
       keyPoints: [
         'Planos municipales y ejecutivos listos para construir',
-        'Cálculo de estructuras portantes e instalaciones completas',
+        'Cálculo estructural sismorresistente e instalaciones completas',
         'Gestión de aprobaciones, permisos y trámites municipales',
       ],
       typicalDuration: '30 a 60 días',
@@ -83,7 +83,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
       icon: Wrench,
       headline: 'Puesta en Valor Comercial y Residencial',
       description:
-        'Renovación rápida de locales comerciales, oficinas corporativas, fachadas y viviendas con mínima interrupción operativa.',
+        'Renovación rápida de locales comerciales, oficinas corporativas, fachadas y viviendas en Gran Mendoza con mínima interrupción.',
       keyPoints: [
         'Renovación integral de fachadas, cubiertas e interiores',
         'Actualización de instalaciones sanitarias, gas y eléctricas',
@@ -106,14 +106,14 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
             <div>
               <div className="flex items-center gap-2 text-xs font-semibold tracking-[0.2em] text-[#FF8A00] uppercase mb-2">
                 <span className="w-6 h-[2px] bg-[#FF8A00]" />
-                <span>Nuestras Especialidades</span>
+                <span>Nuestras Especialidades en Mendoza</span>
               </div>
               <h2 className="text-2xl sm:text-4xl font-extrabold tracking-tight text-white">
                 Servicios de Construcción
               </h2>
             </div>
             <p className="text-sm text-slate-300 max-w-md font-light leading-relaxed">
-              4 unidades de trabajo enfocadas en solidez técnica, plazos garantizados y control presupuestario riguroso.
+              4 unidades de trabajo enfocadas en solidez sismorresistente, plazos garantizados y control presupuestario riguroso.
             </p>
           </div>
         </ScrollReveal>

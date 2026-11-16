@@ -117,11 +117,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact, onScrollToSection
                 <ArrowUpRight className="w-4 h-4" />
               </button>
               <a
-                href="tel:+5491112345678"
+                href="tel:+5492615550192"
                 className="w-full py-2.5 text-xs font-medium text-slate-300 hover:text-white border border-white/10 rounded text-center flex items-center justify-center gap-2"
               >
                 <Phone className="w-3.5 h-3.5 text-[#FF8A00]" />
-                <span>+54 9 11 1234 5678</span>
+                <span>+54 9 261 555 0192</span>
               </a>
             </div>
           </div>

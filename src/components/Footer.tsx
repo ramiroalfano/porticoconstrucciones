@@ -22,12 +22,12 @@ export const Footer: React.FC<FooterProps> = ({ onScrollToSection, onOpenAdmin }
               <PorticoLogo variant="light" size="md" showSubtitle={true} />
             </div>
             <p className="text-slate-400 leading-relaxed max-w-sm mb-6">
-              Grandes proyectos, mejores historias. Empresa constructora especializada en obras civiles, dirección técnica, remodelaciones comerciales y desarrollos inmobiliarios a medida.
+              Grandes proyectos, mejores historias. Empresa constructora en Mendoza, Argentina, especializada en obras civiles sismorresistentes, dirección técnica, remodelaciones comerciales y desarrollos a medida.
             </p>
             <div className="flex items-center gap-4 text-[11px] text-slate-300">
               <div className="flex items-center gap-1.5">
                 <ShieldCheck className="w-4 h-4 text-[#FF8A00]" />
-                <span>Normas IRAM & Seguridad ART</span>
+                <span>Normas IRAM, INPRES-CIRSOC & ART</span>
               </div>
               <span>·</span>
               <div className="flex items-center gap-1.5">
@@ -97,17 +97,17 @@ export const Footer: React.FC<FooterProps> = ({ onScrollToSection, onOpenAdmin }
           {/* Contact Direct */}
           <div className="lg:col-span-4">
             <h4 className="text-xs font-bold uppercase tracking-widest text-white mb-4">
-              Casa Central & Obras
+              Casa Central & Obras · Mendoza
             </h4>
             <div className="space-y-3 text-slate-300">
               <p className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-[#FF8A00] shrink-0 mt-0.5" />
-                <span>Av. Siempre Viva 1234, Buenos Aires, Argentina</span>
+                <span>Av. San Martín 1250, Ciudad de Mendoza, Mendoza, Argentina</span>
               </p>
               <p className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-[#FF8A00] shrink-0" />
-                <a href="tel:+5491112345678" className="hover:text-[#FF8A00] transition-colors">
-                  +54 9 11 1234 5678
+                <a href="tel:+5492615550192" className="hover:text-[#FF8A00] transition-colors">
+                  +54 9 261 555 0192
                 </a>
               </p>
               <p className="flex items-center gap-2.5">

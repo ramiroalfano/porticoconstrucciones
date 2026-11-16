@@ -6,7 +6,7 @@ interface AnimatedWhatsAppButtonProps {
 }
 
 export const AnimatedWhatsAppButton: React.FC<AnimatedWhatsAppButtonProps> = ({
-  phoneNumber = '5491112345678',
+  phoneNumber = '5492615550192',
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [customMsg, setCustomMsg] = useState('');

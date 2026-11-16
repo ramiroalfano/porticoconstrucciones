@@ -23,6 +23,34 @@ export default function App() {
   } | null>(null);
 
   useEffect(() => {
+    // Dynamic SEO URL synchronization for SPA (canonical, og:url, og:image, twitter:image, JSON-LD)
+    const currentUrl = window.location.origin + window.location.pathname;
+    const ogImageUrl = `${window.location.origin}/imgreal/07_fachada_edificio.png`;
+
+    const canonicalEl = document.getElementById('canonical-link') as HTMLLinkElement | null;
+    if (canonicalEl) canonicalEl.href = currentUrl;
+
+    const ogUrlEl = document.getElementById('og-url') as HTMLMetaElement | null;
+    if (ogUrlEl) ogUrlEl.content = currentUrl;
+
+    const ogImgEl = document.querySelector('meta[property="og:image"]') as HTMLMetaElement | null;
+    if (ogImgEl) ogImgEl.content = ogImageUrl;
+
+    const twImgEl = document.querySelector('meta[name="twitter:image"]') as HTMLMetaElement | null;
+    if (twImgEl) twImgEl.content = ogImageUrl;
+
+    const schemaEl = document.getElementById('schema-local-business');
+    if (schemaEl && schemaEl.textContent) {
+      try {
+        const schemaData = JSON.parse(schemaEl.textContent);
+        schemaData.url = currentUrl;
+        schemaData.image = ogImageUrl;
+        schemaEl.textContent = JSON.stringify(schemaData);
+      } catch {
+        // ignore JSON parse error
+      }
+    }
+
     // Check for ?admin=video or #admin in URL
     const searchParams = new URLSearchParams(window.location.search);
     if (searchParams.get('admin') === 'video' || window.location.hash === '#admin-video') {
@@ -111,7 +139,7 @@ export default function App() {
       </main>
 
       {/* Floating Animated WhatsApp Button */}
-      <AnimatedWhatsAppButton phoneNumber="5491112345678" />
+      <AnimatedWhatsAppButton phoneNumber="5492615550192" />
 
       {/* Footer */}
       <Footer

@@ -87,10 +87,10 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ prefilledData })
                         Atención Comercial & Obras
                       </h4>
                       <a
-                        href="tel:+5491112345678"
+                        href="tel:+5492615550192"
                         className="text-base font-bold text-[#1F2D3A] hover:text-[#FF8A00] transition-colors"
                       >
-                        +54 9 11 1234 5678
+                        +54 9 261 555 0192
                       </a>
                       <p className="text-xs text-slate-500 mt-0.5">Línea directa y WhatsApp corporativo</p>
                     </div>
@@ -123,9 +123,9 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ prefilledData })
                         Oficinas Centrales
                       </h4>
                       <p className="text-base font-bold text-[#1F2D3A]">
-                        Av. Siempre Viva 1234
+                        Av. San Martín 1250
                       </p>
-                      <p className="text-xs text-slate-500 mt-0.5">Buenos Aires, Argentina</p>
+                      <p className="text-xs text-slate-500 mt-0.5">Ciudad de Mendoza, Mendoza, Argentina</p>
                     </div>
                   </div>
 
@@ -216,7 +216,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ prefilledData })
                     <input
                       type="tel"
                       required
-                      placeholder="+54 9 11 ..."
+                      placeholder="+54 9 261 ..."
                       value={formData.telefono}
                       onChange={(e) => setFormData({ ...formData, telefono: e.target.value })}
                       className="w-full px-3.5 py-2.5 bg-white border border-slate-300 rounded text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-[#FF8A00] focus:border-transparent transition-all"
@@ -263,7 +263,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ prefilledData })
                   </label>
                   <input
                     type="text"
-                    placeholder="Ej: 300 m² en San Isidro o lote en Nordelta"
+                    placeholder="Ej: 300 m² en Chacras de Coria o lote en Luján de Cuyo"
                     value={formData.superficie}
                     onChange={(e) => setFormData({ ...formData, superficie: e.target.value })}
                     className="w-full px-3.5 py-2.5 bg-white border border-slate-300 rounded text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-[#FF8A00] focus:border-transparent transition-all"

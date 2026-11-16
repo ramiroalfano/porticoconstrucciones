@@ -91,7 +91,7 @@ export const Hero: React.FC<HeroProps> = ({ onScrollToSection, onOpenContact }) 
           {/* Brand Kicker */}
           <div className="flex items-center gap-2.5 text-xs font-semibold tracking-[0.2em] text-[#FF8A00] uppercase mb-4">
             <span className="w-8 h-[2px] bg-[#FF8A00]" />
-            <span>Ingeniería & Construcción</span>
+            <span>Empresa Constructora en Mendoza · Argentina</span>
           </div>
 
           {/* Main Headline */}
@@ -102,7 +102,7 @@ export const Hero: React.FC<HeroProps> = ({ onScrollToSection, onOpenContact }) 
 
           {/* Value Proposition - Short and direct */}
           <p className="text-base sm:text-lg text-slate-200 font-normal leading-relaxed max-w-xl mb-8">
-            Construcción civil, comercial y residencial. Plazos garantizados, precios cerrados y dirección técnica especializada.
+            Construcción civil, comercial y residencial en todo Mendoza. Plazos garantizados, cálculo sismorresistente y dirección técnica especializada.
           </p>
 
           {/* Action CTAs */}

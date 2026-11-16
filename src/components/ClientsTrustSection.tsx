@@ -40,7 +40,7 @@ export const ClientsTrustSection: React.FC = () => {
               </h2>
             </div>
             <p className="text-xs sm:text-sm text-slate-600 max-w-md leading-relaxed">
-              Empresas, inversores y familias que eligieron a Pórtico por su seriedad técnica, cumplimiento de contratos y calidad constructiva.
+              Empresas, inversores y familias de Mendoza que eligieron a Pórtico por su seriedad técnica, cumplimiento de contratos y calidad constructiva.
             </p>
           </div>
         </ScrollReveal>
